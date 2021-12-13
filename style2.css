@@ -53,6 +53,11 @@ body {
   font-size: 10px;
 }
 
+.projecticons img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Contains the documentation and back button */
 .back {
   position: relative;
