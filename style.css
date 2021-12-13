@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height:1000px;
+  overflow: hidden;
+  background-image: url('purplesus.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+  background-position: center center;
+}
+
+.everything{
+  display: grid;
+  align-items: center;
+  justify-self: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.hindface {
+  max-width: 100%;
+  max-height: 80vh;
+  align-self: center;
+}
+
+.interactive {
+  position: relative;
+  display: grid;
+  align-self: center;
+  justify-self: center;
+  z-index: -1;
+}
+
+/* Intro screen */
+.intro {
+  position: fixed;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  background-color: #212529;
+  color: #f5f3f4;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+
+.introtext {
+  width: 80%;
+  display: grid;
+  align-content: center;
+  justify-self: center;
+  animation-name: textFade;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.introtext h1 {
+  margin-bottom: 0;
+  margin-top: 5rem;
+}
+
+.intro img {
+  max-width: 5rem;
+}
+
+.logos img {
+  width: 10rem;
+}
+
+/* CSS Animation for intro screen slide to the left */
+@keyframes goAway {
+  0% {transform: translateX(0px);}
+  100% {transform: translateX(-100rem);}
+}
+
+/* CSS Animation for intro screen text fade */
+@keyframes textFade {
+  0% {opacity: 0%; transform: translateX(-10px);}
+  100% {opacity: 100%; transform: translateX(0px);}
+}
+
+/* Moving eyes that follow cursor */
+.eyes {
+  position: absolute;
+  top: 38.6%;
+  left: -2.3%;
+  width: 100%;
+  transform: translateY(-10%);
+  text-align: center;
+  z-index: -3;
+}
+
+.eye {
+  width: 15%;
+  height: 7vh;
+  background: #fff;
+  display: inline-block;
+  margin: 2.5rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+.ball {
+  width: 15px;
+  height: 15px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: 10px solid #2d1b11;
+}
+
+/* Brain that you hover over */
+.brainImg {
+  max-width: 20rem;
+  z-index: 100;
+  visibility: hidden;
+}
+
+.brain {
+  position: absolute;
+  justify-self: center;
+  align-items: center;
+  display: grid;
+  transform: translateY(-7.7em)translateX(-0.3em);
+}
+
+/* Effect of hovering over brain */
+.replacedBodyBackground {
+  background-image: url("redsus.jpg");
+}
+
+/* Phone Optimization */
+@media all and (max-width: 500px) {
+  .introtext {
+    font-size: 20px;
+  }
+  .arrows {
+    max-width: 5rem;
+  }
+  .logos {
+    max-width: 10rem;
+  }
+  .eye {
+    width: 13%;
+    height: 3vh;
+    background: #fff;
+    display: inline-block;
+    margin: 2rem;
+    border-radius: 50%;
+    position: relative;
+  }
+  .eyes {
+    position: absolute;
+    top: 39.8%;
+    left: -2.2%;
+    width: 100%;
+    transform: translateY(-10%);
+    text-align: center;
+    z-index: -3;
+  }
+  .ball {
+    width: 10px;
+    height: 10px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border: 8px solid #2d1b11;
+  }
+  .brainImg {
+    visibility: visible;
+  }
+}

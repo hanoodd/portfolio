@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('innerbrain.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+  background-position: center center;
+  color: white;
+  font-family: Comic Sans MS;
+}
+
+.introduction {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: grid;
+  align-content: center;
+}
+
+.introductiontext {
+  text-align: center;
+  outline: 2px black;
+  font-size: 3rem;
+  text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+}
+
+/* Emoji pointing downwards */
+.point {
+  width: 6rem;
+  position: absolute;
+  display: grid;
+  justify-self: center;
+  align-self: center;
+  transform: translateY(16rem);
+}
+
+/* Div that contains the grid of all the projects */
+.projects {
+  position: relative;
+  padding: 50px;
+  padding-bottom: 0px;
+  padding-top: 100px;
+  text-align: center;
+  font-size: 20px;
+  text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+}
+
+.projecticons {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  font-size: 10px;
+}
+
+/* Contains the documentation and back button */
+.back {
+  position: relative;
+  padding: 40px;
+  padding-bottom: 30px;
+  text-align: center;
+  text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+}
+
+.doc li {
+  font-size: 20px;
+text-shadow: rgb(255, 255, 255) 1px 0px 0px, rgb(255, 255, 255) 0.540302px 0.841471px 0px, rgb(255, 255, 255) -0.416147px 0.909297px 0px, rgb(255, 255, 255) -0.989992px 0.14112px 0px, rgb(255, 255, 255) -0.653644px -0.756802px 0px, rgb(255, 255, 255) 0.283662px -0.958924px 0px, rgb(255, 255, 255) 0.96017px -0.279415px 0px;
+}
+
+/* Background color of the div that links back to index.html */
+.bye {
+  background-color: red;
+  font-size: 13px;
+}
+
+.bye h1 {
+  margin: 10px;
+  color: orange;
+}
+
+.bye a {
+  text-decoration: none;
+}
+
+/* To seperate from introduction */
+.part2 {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Parent div to the documentation and back button to put them into 2 columns */
+.boy {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  column-gap: 5rem;
+}
+
+/* Phone optimization */
+@media all and (max-width: 500px) {
+  .introduction {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: grid;
+    align-content: center;
+  }
+  .introductiontext {
+    font-size: 20px;
+  }
+  .point {
+    width: 5rem;
+    justify-self: bottom;
+    transform: translateY(20rem);
+  }
+  .projects {
+    font-size: 17px;
+  }
+
+  .projecticons img {
+    max-width: 5rem;
+  }
+  .projecticons h1 {
+    font-size: 15px;
+  }
+  .back {
+    font-size: 12px;
+  }
+}
